@@ -1,0 +1,1 @@
+include ':app',':library',':activity_anim'

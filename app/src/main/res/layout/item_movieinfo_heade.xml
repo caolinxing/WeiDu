@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220pt">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/movie_info_img_bg"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20pt"
+        android:paddingRight="20pt"
+        android:paddingTop="20pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120pt"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/movie_info_sdv"
+                android:layout_width="80pt"
+                android:layout_height="match_parent"
+                app:placeholderImage="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15pt"
+                android:paddingRight="25pt"
+                android:paddingTop="4pt">
+
+                <TextView
+                    android:id="@+id/movie_info_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蚁人2：黄蜂女现身"
+                    android:textColor="@color/colorGray"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10pt"
+                    android:layout_marginTop="20pt">
+
+                    <TextView
+                        android:id="@+id/movie_info_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="类型:"
+                        android:textColor="@color/colorGray" />
+
+                    <TextView
+                        android:id="@+id/movie_info_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4pt"
+                        android:textColor="@color/colorGray"
+                        android:layout_toRightOf="@id/movie_info_0"
+                        android:text="9.1" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/movie_info_tv_timer"
+                    android:layout_width="220pt"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10pt"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="片长:"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/movie_info_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="国家:"
+                    android:textColor="@color/colorGray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50pt"
+            android:layout_marginTop="15pt">
+            <Button
+                android:id="@+id/movie_info_btn_guanzhu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10pt"
+                android:layout_weight="1"
+                android:background="@drawable/tuoyuan_shape"
+                android:text="关注"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/movie_info_btn_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10pt"
+                android:layout_weight="1"
+                android:background="@drawable/tuoyuan_shape"
+                android:text="分享"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

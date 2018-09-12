@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/BulueTheme">
+
+        <ImageView
+            android:id="@+id/ticket_record_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/back_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/MyTicketRecord"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/record_tab"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tl_tab_space_equal="true"
+            app:tl_textSelectColor="@color/BulueTheme"
+            app:tl_underline_color="@color/colorGray"
+            app:tl_textUnselectColor="#080808"
+            app:tl_indicator_color="#3086BE"
+            />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/record_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

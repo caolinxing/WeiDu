@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.MovieFragment">
+
+    <RelativeLayout
+        android:paddingTop="25dp"
+        android:background="#3086BE"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="电影"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+        <ImageView
+            android:id="@+id/iv_qiehuan"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/menu_black" />
+    </RelativeLayout>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/stl_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        app:tl_underline_gravity="BOTTOM"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="#3086BE"
+        app:tl_textUnselectColor="#080808"
+        app:tl_indicator_color="#3086BE"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

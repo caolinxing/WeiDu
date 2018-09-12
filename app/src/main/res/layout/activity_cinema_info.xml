@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.CinemaInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/zhuti"
+        android:paddingTop="25dp">
+
+        <ImageView
+            android:id="@+id/iv_back_cinema_info"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:src="@drawable/left_white" />
+
+        <TextView
+            android:id="@+id/tv_name_cinema_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="啛啛喳喳错"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_cinema_info"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorGray"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="影院信息" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#D0E3FB"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_address_cinema_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="阿萨德" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#fff" />
+
+                        <TextView
+                            android:id="@+id/tv_time_cinema_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="阿萨德" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#fff" />
+
+                        <TextView
+                            android:id="@+id/tv_phone_cinema_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="阿萨德" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#fff" />
+
+                        <TextView
+                            android:id="@+id/tv_type_cinema_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="阿萨德" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_comment_cinema_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:clickable="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/tv_more_comment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="查看更多评论"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60pt"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:paddingTop="5pt"
+                android:gravity="center"
+                android:paddingBottom="5pt"
+                android:paddingLeft="10pt"
+                android:paddingRight="10pt"
+                android:background="@color/colorGray">
+                <EditText
+                    android:id="@+id/et_content_cinema"
+                    android:background="@drawable/tuoyuan_shape2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45pt"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/colorGray"
+                    android:hint="千头万绪，落笔汇成短评一句"
+                    android:paddingLeft="18pt"
+                    android:layout_marginRight="5pt"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tv_send_cinema"
+                    android:layout_width="65pt"
+                    android:layout_height="45pt"
+                    android:text="发表"
+                    android:textColor="@color/white"
+                    android:background="@drawable/tuoyuan_shape3"
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

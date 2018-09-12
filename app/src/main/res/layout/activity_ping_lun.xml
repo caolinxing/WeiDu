@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.PingLunActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70pt"
+        android:background="@color/BulueTheme"
+        android:paddingTop="10pt">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/movie_info_iv_back"
+                android:layout_width="50pt"
+                android:layout_height="40pt"
+                android:layout_gravity="left|center_vertical"
+                android:clickable="true"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/titlebar_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="短评 - 动物世界"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/smartRefresh"
+        app:srlAccentColor="@color/white"
+        app:srlPrimaryColor="@color/zhuti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/item_recycler_usercomment"
+                android:id="@+id/include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/zhuiping_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60pt"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="5pt"
+        android:gravity="center"
+        android:paddingBottom="5pt"
+        android:paddingLeft="10pt"
+        android:paddingRight="10pt"
+        android:background="@color/colorGray">
+        <EditText
+            android:id="@+id/edi_pinglun_content"
+            android:background="@drawable/tuoyuan_shape2"
+            android:layout_width="match_parent"
+            android:layout_height="45pt"
+            android:textSize="15sp"
+            android:textColorHint="@color/colorGray"
+            android:hint="千头万绪，落笔汇成短评一句"
+            android:paddingLeft="18pt"
+            android:layout_marginRight="5pt"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_send_Pinglun"
+            android:layout_width="65pt"
+            android:layout_height="45pt"
+            android:text="发表"
+            android:textColor="@color/white"
+            android:background="@drawable/tuoyuan_shape3"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avl_near_cinema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/zhuti"
+        app:indicatorName="BallPulseIndicator" />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/weidu_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="19dp"
+            android:text="关于维度"
+            android:textColor="#FFF"
+            android:textSize="24sp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+   <ImageView
+       android:id="@+id/weiduimgssss"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:background="@drawable/weidu"
+       android:layout_marginLeft="130dp"
+       android:layout_marginTop="50dp"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="维度"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="140dp"
+        />
+    <TextView
+        android:id="@+id/textweid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:text="     维度影院是一个一站式的在线平台，包括媒体内容、在线购票、用户互动和社交网络、电影衍生品销售以及八维电影的其他服务。在2018年6月，维度电影覆盖了4000多家电影院，这些影院的票房贡献超过了90%。目前，这一维度占据了在线购票市场份额的70%，其中一部电影来自三张电影票，这是一款电影应用，有大量的下载量，而且电影爱好者的使用率很高。与此同时，空间电影为合作影院、电影制片人和发行商提供了一个精确的营销计划，为电影票房提供了帮助。
+"
+        />
+
+
+</LinearLayout>

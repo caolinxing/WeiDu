@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="130pt"
+    android:layout_height="100pt">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/trailer_sdv"
+        android:layout_width="130pt"
+        android:layout_height="100pt" />
+</LinearLayout>

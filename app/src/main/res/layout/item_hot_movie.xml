@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_item_reying_movie"
+        app:placeholderImage="@mipmap/ic_launcher"
+        android:layout_width="70dp"
+        android:layout_height="100dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="4dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title_item_reying_movie"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:text="蚁人2：黄蜂女现身"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_maoyan_item_reying_movie"
+                android:layout_centerVertical="true"
+                android:textColor="#616161"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="猫眼评分"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9.1"
+                android:layout_marginLeft="4dp"
+                android:textColor="#FFD879"
+                android:layout_toRightOf="@id/tv_maoyan_item_reying_movie"/>
+            <TextView
+                android:background="@drawable/buy_background"
+                android:id="@+id/tv_buy_item_reying_movie"
+                android:layout_alignParentRight="true"
+                android:text="购票"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#616161"
+            android:text="主演：唐门，亨利·卡维尔，张斌，曹林星"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#616161"
+            android:text="今天202家影院放映232场"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

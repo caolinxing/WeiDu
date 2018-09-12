@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">WeiDu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textview">TextView</string>
+    <string name="attentioncinema">我关注的所有影院</string>
+    <string name="todo">TODO</string>
+    <string name="already_a_member_login">Already a member? Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="phone">phone</string>
+    <string name="twicepassword">TwicePassword</string>
+    <string name="no_account_yet_create_one">No account yet? Create one</string>
+    <string name="login">Login</string>
+    <string name="date">Date</string>
+    <string name="MyTicketRecord">我的购票记录</string>
+    <string name="movieName">电影名</string>
+    <string name="paid_adress">TextView</string>
+    <string name="TicketDetails">购票详情</string>
+    <string name="cinemaName">电影院名称</string>
+    <string name="MyCheckoutCounter">你家的收银台</string>
+    <string name="PersonalInfomation">个人信息</string>
+    <string name="Head_Pic">头像</string>
+</resources>

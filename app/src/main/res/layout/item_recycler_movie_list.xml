@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:gravity="center_vertical"
+    android:padding="5dp">
+    <ImageView
+        android:id="@+id/movielist_sdv_movie_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_width="90dp"
+        android:layout_height="110dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_toRightOf="@id/movielist_sdv_movie_icon"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/movielist_tv_moviename"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_gray"
+            android:text="神奇的马戏团之动物饼干"/>
+        <TextView
+            android:id="@+id/movielist_tv_moviecontent"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:lines="3"
+            android:ellipsize="end"
+            android:textColor="@color/text_gray"
+            android:text="神奇的马戏团之动物饼干"/>
+    </LinearLayout>
+</RelativeLayout>

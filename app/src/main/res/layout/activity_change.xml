@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ChangeActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_changetoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/BulueTheme"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <ImageView
+            android:id="@+id/fh"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/left_white"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="15dp"
+            android:text="修改密码"
+            android:textColor="#FFF"
+            android:textSize="24sp" />
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="旧密码："
+        android:textSize="18sp" />
+
+    <EditText
+        android:password="true"
+        android:id="@+id/original_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:hint="原始密码"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="变更密码："
+        android:textSize="18sp" />
+
+    <EditText
+        android:password="true"
+        android:id="@+id/change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:hint="变更密码"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="重复密码："
+        android:textSize="10sp" />
+
+    <EditText
+        android:password="true"
+        android:id="@+id/repetition_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:hint="重复密码"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/settings_synch_delet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="显示密码" />
+
+    <Button
+        android:id="@+id/update_password_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f00"
+        android:text="确定"
+        android:textSize="12sp" />
+
+</LinearLayout>

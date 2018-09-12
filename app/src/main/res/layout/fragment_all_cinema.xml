@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.cinemafragment.AllCinemaFragment">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/mh_all_cinema"
+        android:layout_width="match_parent"
+        app:srlAccentColor="@color/white"
+        app:srlPrimaryColor="@color/zhuti"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_all_cinema"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8ad5d8d6" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avl_all_cinema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/zhuti"
+        app:indicatorName="BallPulseIndicator" />
+
+</RelativeLayout>

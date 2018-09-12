@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/BulueTheme">
+
+        <ImageView
+            android:id="@+id/ticket_details_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/back_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/TicketDetails"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:contentPadding="4dp">
+
+            <android.support.constraint.ConstraintLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/ticket_details_movieName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="136dp"
+                    android:layout_marginTop="24dp"
+                    android:text="电影名"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ticket_details_cinemaName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="136dp"
+                    android:layout_marginTop="52dp"
+                    android:text="影院名"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="112dp"
+                    android:layout_marginTop="92dp"
+                    android:text="开始时间"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="92dp"
+                    android:layout_marginEnd="116dp"
+                    android:text="结束时间"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/beginTimeAndEndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="112dp"
+                    android:layout_marginTop="128dp"
+                    android:text="18:30:00--22:15:15"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ticket_details_continuetoPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginEnd="136dp"
+                    android:background="@drawable/pay_textview_border"
+                    android:padding="16dp"
+                    android:text="继续支付"
+                    android:textColor="@color/BulueTheme"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+
+       <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/layout_radius"
+       android:layout_height="45dp">
+
+       <TextView
+           android:text="@string/movieName"
+           android:layout_marginStart="10dp"
+           android:layout_centerVertical="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/ticket_details_movie_down_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginEnd="10dp"
+           android:text="电影名"
+           android:layout_gravity="center_vertical"
+           />
+
+   </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_marginTop="8dp"
+           android:background="@drawable/layout_radius"
+           android:layout_height="45dp">
+
+           <TextView
+               android:text="@string/cinemaName"
+               android:layout_marginStart="10dp"
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/ticket_details_cinema_down_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginEnd="10dp"
+               android:text="电影院名"
+               android:layout_gravity="center_vertical"
+               />
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_marginTop="8dp"
+           android:background="@drawable/layout_radius"
+           android:layout_height="45dp">
+
+           <TextView
+               android:text="购买数量"
+               android:layout_marginStart="10dp"
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/ticket_details_amount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginEnd="10dp"
+               android:text="1"
+               android:layout_gravity="center_vertical"
+               />
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_marginTop="8dp"
+           android:background="@drawable/layout_radius"
+           android:layout_height="45dp">
+
+           <TextView
+               android:text="价格"
+               android:layout_marginStart="10dp"
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/ticket_details_price"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginEnd="10dp"
+               android:text="0.3"
+               android:layout_gravity="center_vertical"
+               />
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_marginTop="8dp"
+           android:background="@drawable/layout_radius"
+           android:layout_height="45dp">
+
+           <TextView
+               android:text="购买时间"
+               android:layout_marginStart="10dp"
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/ticket_details_creatTime"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginEnd="10dp"
+               android:text="2018-09-07 21:22"
+               android:layout_gravity="center_vertical"
+               />
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_marginTop="8dp"
+           android:background="@drawable/layout_radius"
+           android:layout_height="45dp">
+
+           <TextView
+               android:text="订单编号"
+               android:layout_marginStart="10dp"
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/ticket_details_orderId"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginEnd="10dp"
+               android:text="20180901.."
+               android:layout_gravity="center_vertical"
+               />
+
+       </RelativeLayout>
+
+
+
+     </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
